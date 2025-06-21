@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Async Craft Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+  <div class="main">
+    <!-- Navbar -->
+       <nav class="navbar">
+         <div class="nav-logo">
+           <h2>Async Craft Studio</h2>
+         </div>
+         <ul class="nav-links">
+           <li><a href="#home">Home</a></li>
+           <li><a href="#who-we-are">About</a></li>
+           <li><a href="#what-we-do">Services</a></li>
+           <li><a href="#our-works">Portfolio</a></li>
+           <li><a href="#contact">Contact</a></li>
+         </ul>
+         <div class="hamburger">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+         </div>
+       </nav>
+    <!-- Hero section -->
+    <div class="hero-section" id="home">
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="video/bg.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="hero-title">
+        <h1>ASYNC CRAFT STUDIO</h1>
+
+        <div class="mid-section">
+          <div class="left">
+            <h2>Turning Your Vision <br> into a <br><span>"Vibrant Online Reality"</span></h2>
+          </div>
+          <div class="right">
+            <img src="img/Finance%20leaders-bro.svg" alt="Illustration">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="who-we-are" id="who-we-are">
+      <div class="floating-elements"></div>
+
+      <div class="container1">
+        <div class="left1">
+          <div class="sticky-text">
+            WHO <br /> WE <br /> ARE? <br /> HMM 🤔
+          </div>
+        </div>
+
+        <div class="right1">
+          <div class="cards-wrapper">
+            <div class="card">
+              <h2>Crafting Digital Dreams</h2>
+              <p>Custom websites built from scratch — tailored to your goals, style, and audience.</p>
+            </div>
+            <div class="card">
+              <h2>Local Businesses</h2>
+              <p>From restaurants to retail stores, we help local businesses establish their online presence and connect
+                with their community through beautifully crafted websites.</p>
+            </div>
+            <div class="card">
+              <h2>Content Creators</h2>
+              <p>Showcase your creativity with websites that reflect your unique style. Perfect for influencers,
+                artists, and creators ready to own their digital space.</p>
+            </div>
+            <div class="card">
+              <h2>Bloggers & Writers</h2>
+              <p>Share your stories with the world through clean, fast, and SEO-optimized websites designed to grow your
+                readership and engagement.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="what-we-do" id="what-we-do">
+      <div class="floating-elements"></div>
+
+      <div class="container2">
+        <div class="section-header">
+          <h2 class="section-title">What We Do</h2>
+          <p class="section-subtitle">
+            Comprehensive web solutions tailored to bring your digital vision to life
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <div class="box small design-box">
+            <div>
+              <h3>Custom Web Design</h3>
+              <p>Stunning, unique designs that reflect your brand identity and captivate your audience from the first
+                glance.</p>
+            </div>
+            <ul>
+              <li>Responsive layouts</li>
+              <li>Brand-focused identity</li>
+              <li>UX optimization</li>
+            </ul>
+          </div>
+
+          <div class="box small performance-box">
+            <div>
+              <h3>Performance Optimization</h3>
+              <p>Lightning-fast loading speeds and smooth experiences that keep visitors engaged and boost
+                conversions.</p>
+            </div>
+            <ul>
+              <li>Speed optimization</li>
+              <li>Asset compression</li>
+              <li>CDN integration</li>
+            </ul>
+          </div>
+
+          <div class="box tall">
+            <div>
+              <h3>Frontend Development</h3>
+              <p>Interactive websites built with cutting-edge technologies, optimized for performance and user
+                engagement. We create digital experiences that not only look amazing but perform flawlessly across all
+                devices and platforms.</p>
+              <ul>
+                <li>React & Modern JavaScript</li>
+                <li>Smooth Animations & Interactions</li>
+                <li>SEO-Optimized Code Structure</li>
+                <li>Cross-Browser Compatibility</li>
+                <li>Progressive Web App Features</li>
+                <li>Advanced State Management</li>
+                <li>API Integration & Data Handling</li>
+                <li>Performance Monitoring Tools</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="box small maintenance-box">
+            <div>
+              <h3>Maintenance & Support</h3>
+              <p>Comprehensive ongoing support to keep your website secure, updated, and performing at peak
+                efficiency.</p>
+            </div>
+            <ul>
+              <li>Security updates</li>
+              <li>Technical support</li>
+              <li>Performance monitoring</li>
+            </ul>
+          </div>
+
+          <div class="box small seo-box">
+            <div>
+              <h3>SEO & Analytics</h3>
+              <p>Get discovered online with SEO-optimized websites and comprehensive analytics to track your digital
+                success.</p>
+            </div>
+            <ul>
+              <li>On-page SEO</li>
+              <li>Analytics integration</li>
+              <li>Performance reporting</li>
+            </ul>
+          </div>
+
+          <div class="box medium">
+            <div>
+              <h3>Mobile-First Development</h3>
+              <p>Every website we create is built mobile-first, ensuring perfect functionality and stunning visuals
+                across smartphones, tablets, and desktops. Your users get a seamless experience regardless of their
+                device.</p>
+            </div>
+            <ul>
+              <li>Mobile-Optimized Layouts</li>
+              <li>Touch-Friendly Interfaces</li>
+              <li>Progressive Web App Features</li>
+              <li>Offline Functionality</li>
+              <li>App-Like User Experience</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="process-section">
+          <h3 class="process-title">Our Process</h3>
+          <div class="process-steps">
+            <div class="process-step">
+              <div class="step-number">1</div>
+              <h4>Discovery</h4>
+              <p>We dive deep into understanding your brand, goals, and target audience to create the perfect
+                strategy.</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">2</div>
+              <h4>Design</h4>
+              <p>Our creative team crafts stunning mockups and prototypes that bring your vision to life.</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">3</div>
+              <h4>Develop</h4>
+              <p>We build your website using the latest technologies, ensuring it's fast, secure, and scalable.</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">4</div>
+              <h4>Launch</h4>
+              <p>After thorough testing, we launch your website and provide training for easy content management.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-section">
+          <h3>Ready to Transform Your Digital Presence?</h3>
+          <p>Let's work together to create a website that truly represents your brand and drives results.</p>
+          <a href="#contact" class="cta-button">Start Your Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore Our Works Section -->
+    <section class="our-works" id="our-works">
+      <div class="floating-elements"></div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Explore Our Works</h2>
+          <p class="section-subtitle">
+            Discover the websites we've crafted with passion and precision
+          </p>
+        </div>
+
+        <div class="projects-wrapper">
+          <div class="project-card">
+            <div class="media-container">
+              <img src="img/Image1.png" alt="Project 1 Preview" class="project-media" />
+              <div class="media-overlay"></div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">DevKaDose Podcast Website</h3>
+              <div class="tech-tags">
+                <span class="tag">React</span>
+                <span class="tag">HTML</span>
+                <span class="tag">Tailwind</span>
+              </div>
+              <p class="project-description">
+                A sleek and responsive podcast platform built for developers. DevKaDose delivers engaging tech talks, coding insights, and creative inspiration—designed for devs, by devs.
+              </p>
+              <a href="https://react-prototype-96ua.vercel.app/" target="_blank" class="visit-arrow">➜</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="media-container">
+              <img src="img/image3.png" alt="Project 2 Preview" class="project-media" />
+              <div class="media-overlay"></div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Portfolio Website</h3>
+              <div class="tech-tags">
+                <span class="tag">React</span>
+                <span class="tag">Tailwind</span>
+                <span class="tag">CSS</span>
+              </div>
+              <p class="project-description">
+                A sleek and fully responsive personal portfolio website that highlights my work, skills, and creative journey — built to leave a lasting first impression.
+              </p>
+              <a href="https://ashishportfolio-iota.vercel.app/" target="_blank" class="visit-arrow">➜</a>
+            </div>
+          </div>
+
+          <div class="coming-soon">
+            <p>More Coming Soon...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="floating-elements"></div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            Let's collaborate to bring your digital vision to life. Reach out today!
+          </p>
+        </div>
+        <div class="contact-wrapper">
+          <div class="folder-container">
+            <div class="folder-tab">
+              <span>Contact Us</span>
+            </div>
+            <div class="folder-content">
+              <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Send Message</button>
+              </form>
+              <div id="form-message" style="margin-top: 10px; display: none;"></div>
+            </div>
+          </div>
+          <div class="social-links">
+            <h3 class="social-title">Connect With Us</h3>
+            <ul>
+              <!-- <li>
+                <a href="https://twitter.com" target="_blank" class="social-link">
+                  <span class="social-icon">𝕏</span>
+                  Twitter
+                </a>
+              </li> -->
+              <li>
+                <a href="https://www.linkedin.com/in/ashishroy0524/" target="_blank" class="social-link">
+                  <span class="social-icon">LinkedIn</span>
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/async.craft/" target="_blank" class="social-link">
+                  <span class="social-icon">Instagram</span>
+                  @async.craft
+                </a>
+              </li>
+              <li>
+                <a href="mailto:asynccarftstudio@gmail.com" class="social-link">
+                  <span class="social-icon">✉️</span>
+                  Email
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-logo">
+            <h2>Async Craft Studio</h2>
+            <p>Turning your vision into a vibrant online reality.</p>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#who-we-are">About</a></li>
+              <li><a href="#what-we-do">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h3>Connect With Us</h3>
+            <ul>
+              <li>
+                <a href="https://twitter.com" target="_blank" class="social-link">
+                  <span class="social-icon">𝕏</span>
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com" target="_blank" class="social-link">
+                  <span class="social-icon">LinkedIn</span>
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com" target="_blank" class="social-link">
+                  <span class="social-icon">GitHub</span>
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a href="mailto:contact@asyncraft.studio" class="social-link">
+                  <span class="social-icon">✉️</span>
+                  Email
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 Async Craft Studio. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
