@@ -998,7 +998,7 @@ body {
 }
 
 .folder-container {
-  width: 100%;
+  width: 60rem;
   max-width: clamp(400px, 80vw, 60rem);
   position: relative;
   background: rgba(192, 160, 98, 0.05);
